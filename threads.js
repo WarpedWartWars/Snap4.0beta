@@ -6,10 +6,10 @@
     based on morphic.js and blocks.js
     inspired by Scratch, Scheme and Squeak
 
-    written by Jens Mšnig
+    written by Jens MÅ¡nig
     jens@moenig.org
 
-    Copyright (C) 2013 by Jens Mšnig
+    Copyright (C) 2013 by Jens MÅ¡nig
 
     This file is part of Snap!. 
 
@@ -24,7 +24,7 @@
     GNU Affero General Public License for more details.
 
     You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
     prerequisites:
@@ -1646,7 +1646,7 @@ Process.prototype.reportURL = function (url) {
     var response;
     if (!this.httpRequest) {
         this.httpRequest = new XMLHttpRequest();
-        this.httpRequest.open("GET", 'http://' + url, true);
+        this.httpRequest.open("GET", 'https://' + url, true);
         this.httpRequest.send(null);
     } else if (this.httpRequest.readyState === 4) {
         response = this.httpRequest.responseText;
