@@ -6,10 +6,10 @@
     based on morphic.js, blocks.js, threads.js and objects.js
     inspired by Scratch
 
-    written by Jens Mšnig
+    written by Jens MÅ¡nig
     jens@moenig.org
 
-    Copyright (C) 2013 by Jens Mšnig
+    Copyright (C) 2013 by Jens MÅ¡nig
 
     This file is part of Snap!. 
 
@@ -1545,14 +1545,14 @@ IDE_Morph.prototype.snapMenu = function () {
     menu.addItem(
         'Snap! website',
         function () {
-            window.open('http://snap.berkeley.edu/', 'SnapWebsite');
+            window.open('https://warpedwartwars.github.io/', 'SnapWebsite');
         }
     );
     menu.addItem(
         'Download source',
         function () {
             window.open(
-                'http://snap.berkeley.edu/snapsource/snap.zip',
+                'https://warpedwartwars.github.io/Snap4.0beta/snap.zip',
                 'SnapSource'
             );
         }
@@ -1910,7 +1910,7 @@ IDE_Morph.prototype.projectMenu = function () {
         'Import tools...',
         function () {
 
-            var url = 'http://snap.berkeley.edu/snapsource/tools.xml',
+            var url = 'https://warpedwartwars.github.io/Snap4.0beta/tools.xml',
                 request = new XMLHttpRequest();
             request.open('GET', url, false);
             request.send();
@@ -1945,8 +1945,8 @@ IDE_Morph.prototype.aboutSnap = function () {
         + 'The design of Snap! is influenced and inspired by Scratch,\n'
         + 'from the Lifelong Kindergarten group at the MIT Media Lab\n\n'
 
-        + 'for more information see http://snap.berkeley.edu\n'
-        + 'and http://scratch.mit.edu';
+        + 'for more information see https://snap.berkeley.edu\n'
+        + 'and https://scratch.mit.edu';
 
     noticeTxt = localize('License')
         + '\n\n'
@@ -1962,7 +1962,7 @@ IDE_Morph.prototype.aboutSnap = function () {
 
         + 'You should have received a copy of the\n'
         + 'GNU Affero General Public License along with this program.\n'
-        + 'If not, see http://www.gnu.org/licenses/';
+        + 'If not, see https://www.gnu.org/licenses/';
 
     creditsTxt = localize('Contributors')
         + '\n\nNathan Dinsmore: Saving/Loading, Snap-Logo Design, '
@@ -2828,9 +2828,9 @@ IDE_Morph.prototype.createCloudAccount = function () {
     ).promptCredentials(
         'Sign up',
         'signup',
-        'http://snap.berkeley.edu/tos.html',
+        'https://snap.berkeley.edu/tos.html',
         'Terms of Service...',
-        'http://snap.berkeley.edu/privacy.html',
+        'https://snap.berkeley.edu/privacy.html',
         'Privacy...',
         'I have read and agree\nto the Terms of Service',
         world,
@@ -3022,7 +3022,7 @@ IDE_Morph.prototype.cloudAcknowledge = function () {
         new DialogBoxMorph().inform(
             'Cloud Connection',
             'Successfully connected to:\n'
-                + 'http://'
+                + 'https://'
                 + url,
             myself.world(),
             myself.cloudIcon(null, new Color(0, 180, 0))
@@ -3039,7 +3039,7 @@ IDE_Morph.prototype.cloudResponse = function () {
         }
         new DialogBoxMorph().inform(
             'Snap!Cloud',
-            'http://'
+            'https://'
                 + url + ':\n\n'
                 + 'responds:\n'
                 + response,
